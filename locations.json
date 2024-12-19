@@ -1,0 +1,16 @@
+[
+	{
+		"branchName" : "GameGround - Dombivli",
+		"branchAddress" : "Shop no 9 Ground, S S Business Park, Gharda Circle, near Prasad Hotel, Omkar Nagar, Sagarli Gaon, Dombivli East, Dombivli, Maharashtra 421203",
+		"branchPhone" : "+91 96534 73934",
+		"branchTimings" : "10:00 AM - 11:00 PM",
+		"mapLink" : "https://www.google.com/maps/dir//gameground/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be795365b5d95b9:0xf8e61d965f589605?sa=X&ved=1t:3061&ictx=111"
+	}, 
+	{
+		"branchName" : "GameGround - Kalyan",
+		"branchAddress" : "Kalyan",
+		"branchPhone" : "+91 96534 73934",
+		"branchTimings" : "10:00 AM - 11:00 PM",
+		"mapLink" : "https://www.google.com/maps/dir//gameground/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3be795365b5d95b9:0xf8e61d965f589605?sa=X&ved=1t:3061&ictx=111"
+	}
+]
