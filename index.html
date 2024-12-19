@@ -50,10 +50,9 @@
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
     <!-- Navbar -->
-    <nav class="absolute top-0 w-full flex items-center justify-between px-4 py-2 sm:px-6 sm:py-4 text-white z-10">
-      <img src="assets/gg_logo.png" alt="Game Ground Logo" class="h-12 sm:h-16">
-      <!-- Desktop Menu -->
-      <ul class="hidden md:flex space-x-4 text-sm lg:text-lg">
+    <nav class="absolute top-0 w-full flex justify-between text-white items-center px-6 py-4 z-10">
+      <img src="assets/gg_logo.png" alt="Game Ground Logo" class="h-16 sm:h-24">
+      <ul class="hidden sm:flex space-x-4 text-sm md:text-lg">
         <li><a href="#our_playgrounds" class="hover-gameground">Our Playgrounds</a></li>
         <li><a href="#" class="hover-gameground">Discounts & Offers</a></li>
         <li><a href="#" class="hover-gameground">Tournaments & Events</a></li>
@@ -62,8 +61,7 @@
         <li><a href="#" class="hover-gameground">Featured Games</a></li>
         <li><a href="#" class="hover-gameground">Let's Connect</a></li>
       </ul>
-      <!-- Mobile Menu Button -->
-      <button class="md:hidden text-2xl" onclick="toggleMenu()">
+      <button class="sm:hidden text-white text-2xl" onclick="toggleMenu()">
         <i class="fa-solid fa-bars"></i>
       </button>
       <!-- Mobile Menu -->
@@ -78,21 +76,26 @@
           <li><a href="#" class="hover-gameground">Let's Connect</a></li>
         </ul>
       </div>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://www.instagram.com/gameground.gg/" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="tel:+919653473934" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white" style="font-family: 'Orbitron', sans-serif;">
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4">
+      <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold" style="font-family: 'Orbitron', sans-serif;">
         GameGround
       </h1>
-      <p class="mt-4 text-sm sm:text-lg lg:text-xl text-gray-300">Here Every Battle Is Epic</p>
-      <a href="https://maps.app.goo.gl/VHpwqkNPAGBevaPf7"
-        class="mt-6 px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 border-2 border-white rounded-lg button-gameground">
-        <i class="fa-solid fa-location-dot mr-2"></i> Find Us
-      </a>
+      <p class="text-sm sm:text-lg mt-4" style="font-family: 'Kanit', sans-serif;">Here Every Battle Is Epic</p>
+      <button
+        class="mt-6 border-2 border-white px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-lg button-gameground">
+        <i class="fa-solid fa-location-dot mr-2"></i>
+        <a href="https://maps.app.goo.gl/VHpwqkNPAGBevaPf7">Find Us</a>
+      </button>
     </div>
   </div>
-
   <!-- Script for Mobile Menu -->
   <script>
     function toggleMenu() {
@@ -100,49 +103,58 @@
       menu.classList.toggle('hidden');
     }
   </script>
+  <hr class="border-green-500 border-2">
 
-  <!-- Playgrounds Section -->
-  <div id="our_playgrounds" class="bg-black py-8 px-4 lg:px-16">
+  <div id="our_playgrounds" class="bg-black py-8 px-4">
     <div class="text-center">
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-        OUR PLAYGROUNDS
+      <h2 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl mt-4 font-bold text-white text-center">
+        <span class="hidden sm:inline font-light">_________</span>
+        <span class="font-bold">OUR PLAYGROUNDS</span>
+        <span class="hidden sm:inline font-light">_________</span>
       </h2>
-      <p class="text-sm sm:text-lg lg:text-xl text-gray-300 mt-4">Visit any of our branches for an epic gaming
-        experience!</p>
+      <p class="text-lg mt-4 text-white">Visit any of our branches for an epic gaming experience!</p>
     </div>
 
-    <!-- Playgrounds Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-      <div class="bg-gameground p-6 rounded-lg shadow-lg text-white">
-        <h3 class="text-xl lg:text-2xl font-bold">GameGround Arena - Dombivli</h3>
-        <p class="mt-2 flex items-center text-sm lg:text-lg"><i class="fa-solid fa-location-dot mr-2"></i> Shop no 9
-          Ground, S S Business Park, Gharda Circle, near Prasad Hotel, Omkar Nagar, Dombivli East, Dombivli, Maharashtra
-          421203</p>
-        <p class="mt-2 flex items-center text-sm lg:text-lg"><i class="fa-solid fa-clock mr-2"></i> Timings: 10:00 AM -
-          10:00 PM</p>
-        <a href="tel:+919653473934"
-          class="mt-4 px-4 py-2 bg-green-600 hover:bg-green-700 rounded-md flex items-center justify-center">
-          <i class="fa-solid fa-phone mr-2"></i> Call Now
-        </a>
+    <div class="mt-8">
+      <!-- Static Branch 1 -->
+      <div class="bg-gameground p-6 rounded-lg mb-6 text-white shadow-lg">
+        <h3 class="text-xl md:text-3xl font-bold mb-2">GameGround Arena - Dombivli</h3>
+        <p class="mt-2 flex items-center"><i class="fa-solid fa-location-dot mr-2"></i> Shop no 9 Ground, S S Business
+          Park, Gharda
+          Circle, near Prasad Hotel, Omkar Nagar, Sagarli Gaon, Dombivli East, Dombivli, Maharashtra 421203</p>
+        <p class="mt-2 flex items-center"><i class="fa-solid fa-clock mr-2"></i> Timings: 10:00 AM - 10:00 PM</p>
+        <button type="button"
+          class="mt-4 px-4 py-2 bg-green-600 hover:bg-green-700 text-white border-2 border-white rounded-md flex items-center">
+          <a href="tel: +919653473934"> <i class="fa-solid fa-phone mr-2"></i> Call Now</a>
+        </button>
       </div>
-      <div class="bg-gameground p-6 rounded-lg shadow-lg text-white">
-        <h3 class="text-xl lg:text-2xl font-bold">GameGround Arena - Kalyan</h3>
-        <p class="mt-2 flex items-center text-sm lg:text-lg"><i class="fa-solid fa-location-dot mr-2"></i> RockMount
-          commercial, 201, Khadakpada Cir, Gokul Nagari NX, West, Khadakpada, Kalyan, Maharashtra 421301</p>
-        <p class="mt-2 flex items-center text-sm lg:text-lg"><i class="fa-solid fa-clock mr-2"></i> Timings: 10:00 AM -
-          10:00 PM</p>
-        <a href="tel:+919653473934"
-          class="mt-4 px-4 py-2 bg-green-600 hover:bg-green-700 rounded-md flex items-center justify-center">
-          <i class="fa-solid fa-phone mr-2"></i> Call Now
-        </a>
-      </div>
-    </div>
-  </div>
 
-  <!-- Footer Section -->
-  <footer class="bg-black text-center py-4">
-    <p class="text-sm text-gray-400">© 2024 GameGround - Arena of Digital Dreams</p>
-  </footer>
+
+      <!-- Static Branch 2 -->
+      <div class="bg-gameground p-6 rounded-lg mb-6 text-white shadow-lg">
+        <h3 class="text-xl md:text-3xl font-bold mb-2">GameGround Arena - Kalyan</h3>
+        <p class="mt-2 flex items-center"><i class="fa-solid fa-location-dot mr-2"></i> RockMount commercial, 201,
+          Khadakpada Cir, Gokul Nagari NX, West, Khadakpada, Kalyan, Maharashtra 421301</p>
+        <p class="mt-2 flex items-center"><i class="fa-solid fa-clock mr-2"></i> Timings: 10:00 AM - 10:00 PM</p>
+        <button type="button"
+          class="mt-4 px-4 py-2 bg-green-600 hover:bg-green-700 text-white border-2 border-white rounded-md flex items-center">
+          <a href="tel: +919653473934"> <i class="fa-solid fa-phone mr-2"></i> Call Now</a>
+        </button>
+      </div>
+
+
+      <hr class="border-green-500 border-2">
+
+
+      <!--Discounts & Offers-->
+      <div>
+
+      </div>
+      <!-- Footer Section -->
+      <div class="bg-black text-white text-center py-4">
+        <p class="text-xs sm:text-sm">© 2024 GameGround - Arena of Digital Dreams</p>
+      </div>
 </body>
+x
 
 </html>
